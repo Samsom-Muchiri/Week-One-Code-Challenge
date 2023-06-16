@@ -16,8 +16,9 @@ function checkSpeed(carSpeed) {
       }
     }
   }
-  let carSpeed = parseInt("car speed");
-  
+  var carSpeed = parseInt("15");//input car speed
+   checkSpeed(carSpeed)
+  console.log(checkSpeed(carSpeed))
 
   
   

@@ -17,7 +17,7 @@ function calculateGrade(marks) {
   }
   
   
-  let marks = parseInt(prompt("Enter the student marks (between 0 and 100):"));
+  let marks = parseInt(78);//input your marks
   
   
   let grade = calculateGrade(marks);

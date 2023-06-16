@@ -72,7 +72,7 @@ function calculateDeduction(grossPay) {
     return netSalary
     }
 
- var salary = parseInt("70000000")//input number
+ var salary = parseInt("70000000")//input gross salsary
  var benefits = parseInt("800")// input benefits
  calculateNetSalary(salary, benefits)
   
