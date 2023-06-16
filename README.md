@@ -12,3 +12,7 @@ The Speed Detector project is a program designed to monitor the speed of a car a
 ###Challenge 3: Net Salary Calculator (Toy Problem)
 
 The Net Salary Calculator project is a program that calculates the net salary of an employee based on their basic salary and benefits. The program takes the employee's basic salary and additional benefits as input. It calculates various deductions such as Payee Tax, NHIF, and NSSF deductions and determines the net salary. This project provides an efficient way to determine the employee's take-home pay after deducting taxes and social security contributions.
+##Project declaration
+This project contains challenges folder wich contain all the js files with the solution to the challenges
+##Licence
+This project is licensed under the MIT License.
