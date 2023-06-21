@@ -1,3 +1,6 @@
+
+//Challenge 3: calculation of net salary
+
 //NHIF
 function calculateDeduction(grossPay) {
     let deduction = 0;
@@ -61,20 +64,24 @@ function calculateDeduction(grossPay) {
   //Calculation of net salary
     function calculateNetSalary(salary, benefits){
     var monthlyTaxablePay = salary
-    var deductTax = calculateTaxRate(monthlyTaxablePay)
+    var deductTax = calculateTaxRate(monthlyTaxablePay)// %
     var grossPay = salary - ((deductTax / 100) * salary)
     var deductNhif = calculateDeduction(grossPay)
     var pay = salary - ((deductTax / 100) * salary) - deductNhif
     var deductNssf = calculatePensionablePayTier(pay)
-    var netSalaryCalculation = () =>{var netSalaryValue = (pay - deductNhif) + benefits; return netSalaryValue}
+    var netSalaryCalculation = () =>{var netSalaryValue = (pay - deductNhif) ; return netSalaryValue}
     var netSalary = netSalaryCalculation()
-    console.log(netSalary)
+    console.log("Your net salary is: " + netSalary)
     return netSalary
     }
 
- var salary = parseInt("70000000")//input gross salsary
- var benefits = parseInt("800")// input benefits
- calculateNetSalary(salary, benefits)
+
+    const readlineSync = require('readline-sync');
+    //enter the speed
+    const amount = readlineSync.question('Please enter your speed: ');//input gross salsary
+    
+ var salary = parseInt(amount)
+ calculateNetSalary(salary)
   
 
   

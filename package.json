@@ -1,0 +1,15 @@
+{
+  "name": "week-one-code-challenge",
+  "version": "1.0.0",
+  "description": "The Student Grade Generator project is a program that allows users to input student marks and calculates the corresponding grade based on the input. The program prompts the user to enter the marks and determines the correct grade. This project helps automate the process of grading students' marks and provides an efficient way to determine the corresponding grade based on predefined criteria.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "readline-sync": "^1.4.10"
+  }
+}
