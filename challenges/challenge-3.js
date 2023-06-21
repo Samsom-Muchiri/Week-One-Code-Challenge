@@ -77,7 +77,7 @@ function calculateDeduction(grossPay) {
 
 
     const readlineSync = require('readline-sync');
-    //enter the speed
+    
     const amount = readlineSync.question('Please enter your gross salary: ');//input gross salsary
     
  var salary = parseInt(amount)
