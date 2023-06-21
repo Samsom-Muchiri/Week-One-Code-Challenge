@@ -62,14 +62,14 @@ function calculateDeduction(grossPay) {
     return rate;
   }
   //Calculation of net salary
-    function calculateNetSalary(salary, benefits){
+    function calculateNetSalary(salary){
     var monthlyTaxablePay = salary
     var deductTax = calculateTaxRate(monthlyTaxablePay)// %
     var grossPay = salary - ((deductTax / 100) * salary)
     var deductNhif = calculateDeduction(grossPay)
     var pay = salary - ((deductTax / 100) * salary) - deductNhif
     var deductNssf = calculatePensionablePayTier(pay)
-    var netSalaryCalculation = () =>{var netSalaryValue = (pay - deductNhif) ; return netSalaryValue}
+    var netSalaryCalculation = () =>{var netSalaryValue = (pay - deductNssf) ; return netSalaryValue}
     var netSalary = netSalaryCalculation()
     console.log("Your net salary is: " + netSalary)
     return netSalary
